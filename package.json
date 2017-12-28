@@ -1,0 +1,18 @@
+{
+  "scripts": {
+    "start": "DISPLAY=':0' DBUS_SESSION_BUS_ADDRESS='unix:path=/var/run/dbus/system_bus_socket' babel-watch src",
+    "build": "babel src --out-dir bin"
+  },
+  "dependencies": {
+    "dbus": "^1.0.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-watch": "^2.0.7",
+    "eslint": "4.9.0",
+    "eslint-plugin-import": "2.7.0",
+    "eslint-plugin-jsx-a11y": "6.0.2",
+    "eslint-plugin-react": "7.4.0"
+  }
+}

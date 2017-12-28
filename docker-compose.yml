@@ -1,0 +1,14 @@
+version: '2'
+services:
+  dbus:
+    build: .
+    image: knot/dbus
+    container_name: dbus
+    security_opt:
+      - seccomp=unconfined
+    tmpfs:
+      - /run
+      - /run/lock
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:ro
+      - .:/usr/local/bin/app
